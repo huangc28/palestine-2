@@ -1,4 +1,26 @@
-.root {
+.container {
+  width: 1400px;
   display: block;
-  margin: 0 24px;
+  margin:  24px;
+}
+
+.sidebar_container {
+  float: left;
+  // display: inline-block
+}
+
+.content_container {
+  float: left;
+  margin-right: 27px;
+  .content {
+  	width: 1180px;
+  	background-color: #fff;
+  	border: solid 1px #cc0000;
+  }
+}
+
+.clear {
+  float: none;
+  content: '';
+  clear: both;
 }

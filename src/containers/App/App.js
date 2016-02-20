@@ -1,24 +1,28 @@
 import React, { Component } from 'react';
 import { Header, NavBar } from '../../components/index';
 
-// console.log(NavBar);
-// return false;
-
 class App extends Component {
   render() {
     const styles = require('./App.scss');
-    console.log(this.props.children);
     return (
-      <div className={styles.root}>
+      <div className={styles.container}>
+        <div className={styles.content_container}>
+          {/* Header */}
+          <Header />
 
-        {/* Header */}
-        <Header />
+          {/* Navigation Bar */}
+          <NavBar />
 
-        {/* Navigation Bar */}
-        <NavBar />
+          {/* Content */}
+          <div className={styles.content}>
+            { this.props.children }
+          </div>
+        </div>
 
-        {/* Content */}
-        { this.props.children }
+        {/* sidebar container */}
+        <div className={styles.sidebar_container}>
+          sidebar
+        </div>
       </div>
     );
   }
