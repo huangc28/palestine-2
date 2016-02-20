@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.15);
+	border: solid 1px #dddddd;
+  padding-top: 7px;
+}
+
+.tag {
+  float: left;
+  padding: 9px 14.3px 0px 0px;
+  color: #fff;
+  size: 17.2px;
+  text-align: right;
+  width: 112px;
+	height: 43.5px;
+	background-color: #029341;
+  margin-right: 20px;
+}
+
+.title {
+  position: absolute;
+  top: 31%;
+  left: 14%;
+  transform: translate(-14%, -31%);
+  color: #029341;
+  font-size: 18px;
+  float: left;
+  text-align: center;
+}
+
+.clear {
+  content: '';
+  float: none;
+  clear: both;
+}
