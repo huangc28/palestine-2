@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import { NewsBlock } from '../../components/index';
 
 class Home extends Component {
   render() {
-    const styles = require('./Home.scss');
     return (
-      <div className={styles.root}>
-        this is from home.
+      <div>
+        <NewsBlock />
+        <NewsBlock />
       </div>
     );
   }

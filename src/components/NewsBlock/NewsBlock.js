@@ -27,8 +27,10 @@ class NewsBlock extends Component {
         </div>
 
         {/* NewsBlock content */}
-        <div>
-          news block content
+        <div className={styles.content}>
+          <span>calendar icon</span>
+          <span>publisher</span>
+          <p>時間：2016年2月20日 (星期六) 下午3點至5點。 地點：台北市和平東路、師大路口人行道上(北側：面向師大路)。 (閱讀全文)</p>
         </div>
       </div>
     );
