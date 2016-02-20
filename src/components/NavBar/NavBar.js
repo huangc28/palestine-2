@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-// import styles from 'NavBar.scss';
+import styles from './NavBar.scss';
 
 /*
+ *
  * - 關於本站
  * - 網站連結
  * - 巴勒斯坦地圖
@@ -12,7 +13,7 @@ import React, { Component } from 'react';
 class NavBar extends Component {
   render() {
     return (
-      <div>
+      <div className={styles.container}>
         <ul>
           <li>
             <a href="#">關於本站</a>

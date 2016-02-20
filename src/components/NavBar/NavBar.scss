@@ -1,0 +1,25 @@
+.container {
+  width: 1180px;
+  ul {
+    background: #acacac;
+    margin: 0;
+    padding: 9px 0px 9px 71.1px;
+    li {
+      // display:table;
+      padding-right: 71px;
+      padding-left: 71px;
+      height: 25px;
+      text-align: center;
+      line-height: 27px;
+      // float: left;
+      display: inline-block;
+      list-style: none;
+      a {
+        // display:table-cell;
+        vertical-align: middle;
+        size: 18px;
+        color: #ffffff;
+      }
+    }
+  }
+}

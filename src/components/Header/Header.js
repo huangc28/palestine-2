@@ -3,7 +3,6 @@ import {fluid, Row, Col } from 'react-bootstrap';
 import Logo from '../Logo/Logo';
 import Banner from '../Banner/Banner';
 import SearchBar from '../SearchBar/SearchBar';
-
 /*
  * - React bootstrap
  * - Logo image
@@ -13,7 +12,6 @@ import SearchBar from '../SearchBar/SearchBar';
  */
 export default class Header extends Component {
   render() {
-    // const styles = require('./Header.scss');
     return (
       <fluid>
         <Row>
