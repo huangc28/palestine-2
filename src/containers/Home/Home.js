@@ -6,7 +6,6 @@ class Home extends Component {
     return (
       <div>
         <NewsBlock />
-        <NewsBlock />
       </div>
     );
   }

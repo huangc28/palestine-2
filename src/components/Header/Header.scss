@@ -1,10 +1,20 @@
-.root {
-  border: solid 1px;
+.container {
+  width: 86%;
+  display: border-box;
 }
 
-.size {
-  width: 156px;
-  height: 155px;
+.left {
+  float: left
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  content: '';
+  float: none;
+  clear:both;
 }
 
 .center {

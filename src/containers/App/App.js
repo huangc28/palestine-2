@@ -1,29 +1,27 @@
 import React, { Component } from 'react';
-import { Header, NavBar } from '../../components/index';
+import {fluid, Row, Col} from 'react-bootstrap';
+import { Header, Sidebar, NavBar } from '../../components/index';
+import classname from 'classnames/bind';
+import styles from './App.scss';
+const cx = classname.bind(styles);
 
 class App extends Component {
   render() {
-    const styles = require('./App.scss');
     return (
-      <div className={styles.container}>
-        <div className={styles.content_container}>
-          {/* Header */}
-          <Header />
-
-          {/* Navigation Bar */}
-          <NavBar />
-
-          {/* Content */}
-          <div className={styles.content}>
-            { this.props.children }
-          </div>
-        </div>
-
-        {/* sidebar container */}
-        <div className={styles.sidebar_container}>
-          sidebar
-        </div>
-      </div>
+      <fluid>
+        <Row>
+          <Col md={10} className={styles.container}>
+            <Header />
+            <NavBar />
+            <div className={cx('content_container')}>
+              {this.props.children}
+            </div>
+          </Col>
+          <Col md={2}>
+            <Sidebar />
+          </Col>
+        </Row>
+      </fluid>
     );
   }
 }

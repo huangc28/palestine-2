@@ -15,3 +15,4 @@ export Header from './Header/Header';
 export Logo from './Logo/Logo';
 export NavBar from './NavBar/NavBar';
 export NewsBlock from './NewsBlock/NewsBlock';
+export Sidebar from './Sidebar/Sidebar';

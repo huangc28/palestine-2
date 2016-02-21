@@ -1,22 +1,13 @@
 .container {
-  width: 1400px;
-  display: block;
-  margin:  24px;
-}
-
-.sidebar_container {
-  float: left;
+    padding-top: 25px;
+    padding-left: 24px;
 }
 
 .content_container {
-  float: left;
-  margin-right: 27px;
-  .content {
-    padding: 41.5px 39px 15px 45px;
-  	width: 1180px;
-  	background-color: #fff;
-  	border: solid 1px #cc0000;
-  }
+  width: 100%;
+  border: solid 1px #cc0000;
+  padding: 41.5px 39px 15px 45px;
+	background-color: #fff;
 }
 
 .clear {

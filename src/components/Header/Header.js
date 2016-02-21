@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
-import {fluid, Row, Col } from 'react-bootstrap';
+import classname from 'classnames/bind';
+import styles from './Header.scss';
 import Logo from '../Logo/Logo';
 import Banner from '../Banner/Banner';
 import SearchBar from '../SearchBar/SearchBar';
+import {fluid, Row, Col} from 'react-bootstrap';
+const cx = classname.bind(styles);
 /*
  * - React bootstrap
  * - Logo image
@@ -15,14 +18,11 @@ export default class Header extends Component {
     return (
       <fluid>
         <Row>
-          <Col md={2}>
-            <Logo />
-          </Col>
-          <Col md={8}>
-            <Banner />
-          </Col>
-          <Col md={2}>
-            <SearchBar />
+          <Col md={12} className={cx('container')}>
+            <div className={cx('left')}><Logo /></div>
+            <div className={cx('left')}><Banner /></div>
+            <div className={cx('right')}><SearchBar /></div>
+            <div className={cx('clear')}></div>
           </Col>
         </Row>
       </fluid>

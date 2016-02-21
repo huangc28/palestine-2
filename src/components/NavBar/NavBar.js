@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import classname from 'classnames/bind';
+import {fluid, Row, Col, Nav, NavItem} from 'react-bootstrap';
 import styles from './NavBar.scss';
+const cx = classname.bind(styles);
 
 /*
  *
@@ -13,25 +16,19 @@ import styles from './NavBar.scss';
 class NavBar extends Component {
   render() {
     return (
-      <div className={styles.container}>
-        <ul>
-          <li>
-            <a href="/about">關於本站</a>
-          </li>
-          <li>
-            <a href="#">網站連結</a>
-          </li>
-          <li>
-            <a href="#">巴勒斯坦地圖</a>
-          </li>
-          <li>
-            <a href="#">訪客網站留言板</a>
-          </li>
-          <li>
-            <a href="#">你能做什麼</a>
-          </li>
-        </ul>
-      </div>
+      <fluid>
+        <Row style={{'padding': '0px'}}>
+          <Col md={12}>
+            <Nav bsStyle="pills" className={cx('navBarContainer')}>
+              <NavItem className={cx('navItemWidth')} href="/about">關於本站</NavItem>
+              <NavItem className={cx('navItemWidth')} href="#">網站連結</NavItem>
+              <NavItem className={cx('navItemWidth')} href="#">巴勒斯坦地圖</NavItem>
+              <NavItem className={cx('navItemWidth')} href="#">訪客網站留言板</NavItem>
+              <NavItem className={cx('navItemWidth')} href="#">你能做什麼</NavItem>
+            </Nav>
+          </Col>
+        </Row>
+      </fluid>
     );
   }
 }
