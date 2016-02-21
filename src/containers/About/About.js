@@ -26,7 +26,7 @@ export default class About extends Component {
         我們稱不上是個運動團體，但是我們歡迎熟或不熟的海內外華人朋友加入我們，協助充實這個網站，讓她發揮一些功能。
         </p>
 
-        <div style={cx('marginTop')}>
+        <div className={cx('marginTop')}>
           <a href="#" className={cx('copyRightLink')}>版權聲明</a>
         </div>
         <p className={cx('lineHeight', 'marginTop')}>
