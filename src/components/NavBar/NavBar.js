@@ -16,7 +16,7 @@ class NavBar extends Component {
       <div className={styles.container}>
         <ul>
           <li>
-            <a href="#">關於本站</a>
+            <a href="/about">關於本站</a>
           </li>
           <li>
             <a href="#">網站連結</a>

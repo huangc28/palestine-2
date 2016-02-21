@@ -1,8 +1,6 @@
 import React from 'react';
 import { IndexRoute, Route, hashHistory } from 'react-router';
-// import App from './containers/App/App';
-// import Home from './containers/Home/Home';
-import { App, Home } from 'containers';
+import { App, Home, About } from 'containers';
 
 /*
  * 1. missing a header
@@ -15,6 +13,7 @@ export default () => {
 
       { /* Routes */ }
       <Route path="home" component={Home} />
+      <Route path="about" component={About} />
 
     </Route>
   );
