@@ -4,9 +4,6 @@ import { IndexRoute, Route, hashHistory } from 'react-router';
 // import Home from './containers/Home/Home';
 import { App, Home, Sample } from 'containers';
 
-
-
-// console.log(Home);
 /*
  * 1. missing a header
  * 2. missing a footer

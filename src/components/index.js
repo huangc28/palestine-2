@@ -14,3 +14,4 @@ export WidgetForm from './WidgetForm/WidgetForm';
 export Header from './Header/Header';
 export Logo from './Logo/Logo';
 export NavBar from './NavBar/NavBar';
+export SampleSVG from './SampleSVG/SampleSVG';
