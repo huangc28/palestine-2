@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import {Grid, Row, Col, Nav, NavItem} from 'react-bootstrap';
+import {Grid, Row, Col, Nav} from 'react-bootstrap';
 import classname from 'classnames/bind';
-import lodash from 'lodash';
+// import lodash from 'lodash';
 import styles from './SidebarNavbar.scss';
-console.log(_);
+// console.log(_);
 const cx = classname.bind(styles);
 
 class SidebarNavbar extends Component {
@@ -12,12 +12,7 @@ class SidebarNavbar extends Component {
       <Grid>
         <Row>
           <Col md={12}>
-            <Nav style={{textAlign: 'center'}} className={cx('SidebarNav')}>
-              {lodash.object(lodash.map())  this.props.sidebarMenu.map((index, item) => {
-                console.log(index, item);
-                return (<NavItem style={{width: '158px'}} href={'#'}>abc</NavItem>);
-              })}
-            </Nav>
+            <Nav style={{textAlign: 'center'}} className={cx('SidebarNav')}>something</Nav>
           </Col>
         </Row>
       </Grid>
