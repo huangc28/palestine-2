@@ -1,54 +1,60 @@
 import React, {Component} from 'react';
 import styles from './Sidebar.scss';
+import { Link } from 'react-router';
 import {Grid, Row, Col} from 'react-bootstrap';
 import classname from 'classnames/bind';
 import SidebarLogo from '../SidebarLogo/SidebarLogo';
 import SidebarNavbar from '../SidebarNavbar/SidebarNavbar';
-const cx = classname.bind(styles);
-
-console.log(SidebarLogo);
 class Sidebar extends Component {
   render() {
-    const sidebarMenu = {
-      '新聞簡報': '#',
-      '歷史背景': '#',
-      '隔離區': '#',
-      '屯墾區': '#',
-      '難民問題': '#',
-      '政治文化': '#',
-      '若雪書信': '#',
-      '人權狀況': '#',
-      '運動紀實': '#',
-      '直接行動': '#',
-      '其他地區': '#',
-      '其他': '#'
-    };
-
-    const sidebarLogoStyle = {
-      padding: '43px 34px 22px 34px'
-    };
-
-    const sidebarNavbarStyle = {
-      padding: '0px'
-    };
     return (
-      <Grid>
-        <Row>
-          <Col className={cx('sidebarContainer')} md={12}>
-            {/* sidebar logo */}
-            <div style={sidebarLogoStyle}>
-              <SidebarLogo />
-            </div>
-            {/* sidebar navigation */}
-            <div style={sidebarNavbarStyle}>
-              <SidebarNavbar sidebarMenu={sidebarMenu}/>
-            </div>
-            {/* sidebar logo */}
-          </Col>
-        </Row>
-      </Grid>
+      <div className={styles.sidebarContainer}>
+        <div className={styles.sidebarLogoContainer}>
+          <SidebarLogo />
+        </div>
+        {/* sidebar navigation */}
+        <div className={styles.sidebarNavBar}>
+          <ul>
+            <li className={styles.black}>
+              <Link to='#'> 新聞簡報 </Link>
+            </li>
+            <li className={styles.green}>
+              <Link to='#'> 歷史背景 </Link>
+            </li>
+            <li className={styles.blue}>
+              <Link to='#'> 隔離區 </Link>
+            </li>
+            <li className={styles.red}>
+              <Link to='#'> 屯墾區 </Link>
+            </li>
+            <li className={styles.black}>
+              <Link to='#'> 難民問題 </Link>
+            </li>
+            <li className={styles.green}>
+              <Link to='#'> 政治文化 </Link>
+            </li>
+            <li className={styles.blue}>
+              <Link to='#'> 若雪書信 </Link>
+            </li>
+            <li className={styles.red}>
+              <Link to='#'> 人權狀況 </Link>
+            </li>
+            <li className={styles.black}>
+              <Link to='#'> 運動紀實 </Link>
+            </li>
+            <li className={styles.green}>
+              <Link to='#'> 直接行動 </Link>
+            </li>
+            <li className={styles.blue}>
+              <Link to='#'> 其他地區 </Link>
+            </li>
+            <li className={styles.red}>
+              <Link to='#'> 其他 </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
     );
   }
 }
-
 export default Sidebar;
